@@ -17,6 +17,7 @@ Decrypt a Variable file so it can be edited
 
 ### Ansible Directory Structure
 
+```
 ├── hosts
 ├── ansible.cfg
 ├── playbook_name.yml
@@ -37,3 +38,4 @@ Decrypt a Variable file so it can be edited
 ├── templates/
     └── template_name1.j2
     └── template_name2.j2
+```
