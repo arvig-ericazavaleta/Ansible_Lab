@@ -27,10 +27,18 @@ Encrypt a Variables Vault File
 Decrypt a Variable file so it can be edited
 * ```ansible-vault decrypt vault.yml```
 
+### Guide to YAML syntax
+https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+
+
+### General Guide to basic Ansible Playbooks
+https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks
+
+
 ### Ansible Directory Structure
 
 ```
-├── hosts                       # Inventory of hosts.
+├── hosts                       # An INI file that contains Inventory of hosts.
 ├── ansible.cfg                 # Ansible config with defaults, including location of hosts file.
 ├── playbook_name.yml           # Ansible Playbook, There can be multiple playbook files. Playbooks will reference roles. 
 │
