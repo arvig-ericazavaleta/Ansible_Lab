@@ -18,16 +18,16 @@ Decrypt a Variable file so it can be edited
 ### Ansible Directory Structure
 
 ```
-├── hosts
-├── ansible.cfg
-├── playbook_name.yml
+├── hosts                       # Inventory of hosts.
+├── ansible.cfg                 # Ansible config with defaults, including location of hosts file.
+├── playbook_name.yml           # Ansible Playbook, There can be multiple playbook files. Playbooks will reference roles. 
 │
-├── group_vars/
+├── group_vars/                 # Folder where global variables are stored. 
 │   └── all/
-│       ├── vars.yml
-│       └── vault.yml
+│       ├── vars.yml            # Global Variables file.
+│       └── vault.yml           # Global Variables file that contains secrets.
 │
-├── roles/
+├── roles/                      # Roles that get referenced in the playbook file. 
 │   └── role_name1/
 │       └── tasks/
 │           └── main.yml
@@ -35,7 +35,7 @@ Decrypt a Variable file so it can be edited
 │       └── tasks/
 │           └── main.yml
 │
-├── templates/
+├── templates/                  # Templates that will get uploaded in Playbooks.
     └── template_name1.j2
     └── template_name2.j2
 ```
