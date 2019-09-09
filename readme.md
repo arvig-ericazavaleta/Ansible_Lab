@@ -1,5 +1,17 @@
 # Ansible Example Lab
 
+### Install Ansible on Ubuntu
+```
+sudo apt update
+sudo apt install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+```
+
+### Download this Lab
+Enter the folder you want to download this repo into and run. 
+```
+git clone https://github.com/ericazavaleta/Ansible_Lab.git
+```
 
 ### Ansible Commands
 
