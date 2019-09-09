@@ -35,6 +35,10 @@ https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks
 
 
+### Guide to Ansible Vault
+https://www.digitalocean.com/community/tutorials/how-to-use-vault-to-protect-sensitive-ansible-data-on-ubuntu-16-04
+
+
 ### Ansible Directory Structure
 
 ```
