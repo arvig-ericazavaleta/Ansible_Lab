@@ -1,0 +1,29 @@
+---
+
+#Update Hostnames.  
+- hosts: all
+  become: true
+
+  roles:
+    - setup_hostname
+
+#Setup Iptables Firewall
+- hosts: all
+  become: true
+
+  roles: 
+   - setup_firewall
+
+#Install Apache
+- hosts: all
+  become: true
+
+  roles: 
+   - setup_apache
+
+#Setup our website
+- hosts: all
+  become: true
+
+  roles: 
+   - setup_website

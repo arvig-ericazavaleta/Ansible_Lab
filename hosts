@@ -1,2 +1,2 @@
 [Lab]
-AnsibleLab001 ansible_host=172.19.34.15 hostname=ansibleLab01.dev.arvig.com
+AnsibleLab001 ansible_host=172.19.33.77 hostname=ansibleLab01.dev.arvig.com

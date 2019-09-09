@@ -1,0 +1,29 @@
+---
+
+- name: Set Hostname
+  hostname: 
+    name: "{{ hostname }}"
+  register: hostnamechange
+
+- name: Update /etc/hosts
+  template:
+    src: templates/hosts.j2
+    dest: /etc/hosts
+
+- name: Restarting Server
+  become: yes
+  shell: sleep 5 && shutdown -r now "Ansible hostname update triggered"
+  async: 1
+  poll: 0
+  ignore_errors: true
+  when: hostnamechange.changed
+
+- name: Waiting for Server to come back from Reboot
+  become: no
+  local_action: wait_for
+    port=22
+    host={{ ansible_host }}
+    search_regex=OpenSSH
+    delay=10
+    timeout=120
+  when: hostnamechange.changed

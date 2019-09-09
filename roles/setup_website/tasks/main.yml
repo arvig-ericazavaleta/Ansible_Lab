@@ -1,0 +1,6 @@
+---
+
+- name: Copy over our website
+  template:
+    src: templates/index.html.j2
+    dest: /var/www/html/index.html
