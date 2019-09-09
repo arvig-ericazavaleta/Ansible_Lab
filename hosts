@@ -1,2 +1,5 @@
+#This file contains the inventory that this ansible playbook can poll.  Hosts can be broken into groups that can be referenced. 
+#Variables specific to a particular host can also be added in here. 
+
 [Lab]
 AnsibleLab001 ansible_host=172.19.33.77 hostname=ansibleLab01.dev.arvig.com
