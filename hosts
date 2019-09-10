@@ -2,4 +2,4 @@
 #Variables specific to a particular host can also be added in here. 
 
 [Lab]
-AnsibleLab001 ansible_host=172.19.33.77 hostname=ansibleLab01.dev.arvig.com
+AnsibleLab01 ansible_host=172.19.33.77 hostname=ansibleLab01.dev.arvig.com

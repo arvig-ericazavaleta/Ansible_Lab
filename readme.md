@@ -1,11 +1,23 @@
 # Ansible Example Lab
 
+Ansible is a framework for automating across IT operations.  Ansible's Engine runs Playbooks, the automation language to describe IT application infrastructure.  Ansible is an Agentless architecture, only requiring SSH and Python to manage Linux hosts.  Ansible Playbooks are written in YAML which makes them easily human readable.  Tasks are executed in order which makes execution predictable. 
+
 ### Install Ansible on Ubuntu
 ```
 sudo apt update
 sudo apt install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
 ```
+
+### Ansible Definitions
+
+* Inventory: an INI file that contains information about the servers you are managing.
+* Facts: global variables containing information about the system, like network interfaces or operating system.
+* Playbook: a YAML file containing a series of procedures that should be automated.
+* Task: a block that defines a single procedure to be executed, e.g.: install a package.
+* Module: a module typically abstracts a system task, like dealing with packages or creating and changing files. Ansible has a multitude of built-in modules, but you can also create custom ones.
+* Role: a set of related playbooks, templates and other files, organized in a pre-defined way to facilitate reuse and share.
+
 
 ### Download this Lab
 Enter the folder you want to download this repo into and run. 
@@ -29,6 +41,13 @@ Encrypt a Variables Vault File
 
 Decrypt a Variable file so it can be edited
 * ```ansible-vault decrypt vault.yml```
+
+Useful Switches
+* ```--ask-vault-pass``` Have ansible ask for the password to decrypt a vault 
+* ```--check``` Do a dry run  
+* ```--syntax-check```  Checks playbook syntax
+* ```--step``` Step thru each task
+* ```-vvvv``` Verbose Output
 
 ### Guide to YAML syntax
 https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
