@@ -11,12 +11,12 @@ sudo apt-add-repository ppa:ansible/ansible
 
 ### Ansible Definitions
 
-* Inventory: an INI file that contains information about the servers you are managing.
-* Facts: global variables containing information about the system, like network interfaces or operating system.
-* Playbook: a YAML file containing a series of procedures that should be automated.
-* Task: a block that defines a single procedure to be executed, e.g.: install a package.
-* Module: a module typically abstracts a system task, like dealing with packages or creating and changing files. Ansible has a multitude of built-in modules, but you can also create custom ones.
-* Role: a set of related playbooks, templates and other files, organized in a pre-defined way to facilitate reuse and share.
+* **Inventory:** an INI file that contains information about the servers you are managing.
+* **Facts:** global variables containing information about the system, like network interfaces or operating system.
+* **Playbook:** a YAML file containing a series of procedures that should be automated.
+* **Task:** a block that defines a single procedure to be executed, e.g.: install a package.
+* **Module:** a module typically abstracts a system task, like dealing with packages or creating and changing files. Ansible has a multitude of built-in modules, but you can also create custom ones.
+* **Role:** a set of related playbooks, templates and other files, organized in a pre-defined way to facilitate reuse and share.
 
 
 ### Download this Lab
