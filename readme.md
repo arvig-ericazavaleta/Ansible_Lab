@@ -18,6 +18,9 @@ git clone https://github.com/ericazavaleta/Ansible_Lab.git
 Have ansible test connection to all hosts in the inventory file.  All can be subsituted for a inventory group. 
 * ```ansible all -m ping```
 
+Display Facts for a particular host. 
+* ```ansible all -m setup```
+
 Run an ansible playbook
 * ```ansible-playbook --ask-vault-pass some_playabook.yml```
 
